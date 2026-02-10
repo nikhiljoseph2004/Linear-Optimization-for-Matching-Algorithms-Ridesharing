@@ -182,9 +182,13 @@ This is an academic research project. While contributions are welcome, please no
 - Focus is on demonstrating optimization techniques, not production deployment
 - Suggested improvements: additional weighting schemes, larger datasets, different solvers
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
 ## 📄 License
 
-This project is an academic work created for educational purposes. The code is provided as-is for learning and research.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This is an academic work created for educational purposes. If you use this code or methodology in your research, please cite the original paper appropriately.
 
 ## 👥 Authors
 
