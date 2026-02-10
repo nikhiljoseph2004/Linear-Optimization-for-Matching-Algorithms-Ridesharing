@@ -24,6 +24,7 @@ wheels/
 venv/
 ENV/
 env/
+.venv/
 
 # IDE
 .vscode/
@@ -31,16 +32,24 @@ env/
 *.swp
 *.swo
 *~
+.ipynb_checkpoints/
 
 # OS
 .DS_Store
 Thumbs.db
 
+# Jupyter
+.ipynb_checkpoints
+
 # Output files
-ridesharing_results.png
-*.png
-*.jpg
-!Dynamic_Ridesharing.pptx
+results/
+output/
+*.log
 
 # Gurobi
 gurobi.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
