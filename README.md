@@ -175,39 +175,13 @@ Our implementation demonstrates:
 - **[Final Report](docs/IEDA3010%20Final%20Report.pdf)**: Complete research findings
 - **[Original Paper](docs/Novel%20dynamic%20formulations%20for%20real-time%20ride-sharing%20systems.pdf)**: Theoretical foundation
 
-## 🤝 Contributing
-
-This is an academic research project. While contributions are welcome, please note:
-- The main implementation reflects research objectives from IEDA3010 coursework
-- Focus is on demonstrating optimization techniques, not production deployment
-- Suggested improvements: additional weighting schemes, larger datasets, different solvers
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-This is an academic work created for educational purposes. If you use this code or methodology in your research, please cite the original paper appropriately.
 
 ## 👥 Authors
 
 **Course**: IEDA3010 - Optimization Methods  
-**Institution**: [Your University Name]  
-**Contributors**: [Names of team members]
+**Institution**: Hong Kong University of Science and Technology 
+**Contributors**: Nikhil Joseph, Victoire Anguilids, Kamran Arshad Butt, Sai Vineeth
 
-## 🙏 Acknowledgments
-
-- Original paper authors for the theoretical framework
-- Course instructors for guidance and support
-- Gurobi for providing academic licenses
-- Melbourne transportation data providers
-
-## 📞 Contact
-
-For questions or discussions about this research:
-- Open an issue on GitHub
-- Contact: [Your contact information]
 
 ---
 
