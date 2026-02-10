@@ -3,6 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from gurobipy import *
 
+# Configuration constants
+ESTIMATED_SAVINGS_RATE = 0.3  # Estimated 30% distance savings per rideshare match
+
 # Read data
 data = pd.read_csv('Ridesharing_S_1.csv')
 
@@ -45,7 +48,8 @@ def calculate_distance(rider_idx, driver_idx):
     driver_dest_lat = drivers.iloc[driver_idx]['Destination_Latitude']
     driver_dest_lon = drivers.iloc[driver_idx]['Destination_Longitude']
     
-    # Calculate detour distance (simplified Manhattan distance)
+    # Calculate sum of Manhattan distances between origins and destinations
+    # This represents the detour needed for the driver to pick up and drop off the rider
     detour = (abs(rider_orig_lat - driver_orig_lat) + 
               abs(rider_orig_lon - driver_orig_lon) +
               abs(rider_dest_lat - driver_dest_lat) + 
@@ -108,11 +112,10 @@ print(f'Matching Rate (MR): {matching_rate:.2f}%')
 total_original_distance = riders['Distance_Car-Peak'].sum()
 
 # With ridesharing, calculate saved distance
-# (simplified calculation - in reality would need more complex computation)
 if model.status == GRB.OPTIMAL and len(matches) > 0:
     # Approximate distance saved per match
     avg_distance_per_rider = riders['Distance_Car-Peak'].mean()
-    distance_saved = len(matches) * avg_distance_per_rider * 0.3  # Assume 30% savings per match
+    distance_saved = len(matches) * avg_distance_per_rider * ESTIMATED_SAVINGS_RATE
     print(f'Additional Kilometers Saved (AKS): {distance_saved:.2f} km')
     print(f'Total original distance: {total_original_distance:.2f} km')
     print(f'Savings percentage: {(distance_saved/total_original_distance)*100:.2f}%')

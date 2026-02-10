@@ -67,4 +67,4 @@ The optimization model:
 
 ## Source
 
-This code was extracted from slides 14-15 of the `Dynamic_Ridesharing.pptx` presentation file in this repository.
+This code was extracted from the screenshot images (image52.png and image53.png) located in slides 14-15 of the `Dynamic_Ridesharing.pptx` presentation file in this repository.
